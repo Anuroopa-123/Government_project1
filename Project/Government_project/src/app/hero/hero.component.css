@@ -1,201 +1,250 @@
 /* Hero Section Styling */
 #hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    color: white;
-    text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  text-align: center;
 }
 
 .hero-video video {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 20px;
-    z-index: 1;
-    position: relative;
+  max-width: 800px;
+  padding: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 .cta-button {
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
 
 /* Members Section Styling */
 #members {
-    padding: 60px 0;
-    background-color: #f4f4f4;
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+#members .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#members .section-title h2 {
+  font-size: 1.3rem; /* clear readable size */
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0 auto 10px auto; /* centered with margin below */
+  background: #e7e9fd; /* light purple background */
+  color: #3f4a9f; /* your brand blue */
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+  letter-spacing: 1px;
 }
 
+#members .section-title p {
+  font-size: 1rem; /* smaller than h2 */
+  font-weight: 500;
+  color: #555; /* subtle dark gray */
+  margin: 0 auto; /* centered */
+  max-width: 80%; /* keeps it neat on wide screens */
+}
 .section-title h2 {
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 8px 20px;
-    margin: 0;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 50px;
-    display: block;
-    text-transform: uppercase;
-    color: var(--text-green);
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 50px;
+  display: block;
+  text-transform: uppercase;
+  color: var(--text-green);
 }
 
 .section-title p {
-    font-size: 1.2rem;
-    color: #777;
-    text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
 }
 
 /* Service Card Styling */
 .service-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding-top: 50px;
-    height: 102%;
-    width: 103%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 50px;
+  height: 102%;
+  width: 103%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon Shield */
 .card-header {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #007bff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .card-header .icon-box i {
-    font-size: 2rem;
-    color: white;
+  font-size: 2rem;
+  color: white;
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-top: 70px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-body p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
 }
-
+/* Add more spacing above member name */
+.service-card h4 {
+  margin-top: 60px; /* was 70px, increase for more gap below shield */
+}
 /* Circular Image */
 .feature-image img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 /* Footer and Button */
 .card-footer {
-    padding: 10px 20px;
-    background-color: #f8f8f8;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
 }
 
 .card-footer a {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #064ea2;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #064ea2;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-footer a:hover {
-    background-color: #064ea2;
-    transform: translateX(5px);
+  background-color: #064ea2;
+  transform: translateX(5px);
 }
 
 .card-footer i {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 /* Hover Effect: Line Above the Card */
 .service-card:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #007bff;
-    transition: width 0.4s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.4s ease;
 }
 
 .service-card:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 /* Grid and Responsiveness */
 .row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Announcements Section Styling */
 #announcements {
-    padding: 60px 0;
-    background-color: #f9f9f9;
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+#announcements .section-title {
+  text-align: center; /* Ensure center alignment for both heading and paragraph */
+  margin-bottom: 20px;
+}
+#announcements .section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0 auto; /* Center horizontally */
+  background: #e7e9fd; /* Light background pill */
+  color: var(--text-green); /* Theme color */
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+#announcements .section-title p {
+  margin: 15px auto 0 auto; /* Center below heading */
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #777; /* Adjust for readability */
+  max-width: 500px; /* Optional: prevent overly long lines on large screens */
 }
 
 .section-title h2 {
@@ -207,125 +256,125 @@ h4 {
   display: inline-block;
   border-radius: 50px;
   text-transform: uppercase;
-  color: var(--text-green); 
+  color: var(--text-green);
   font-size: 16px;
   text-align: center;
 }
 
 .section-title p {
-    font-size: 1.2rem;
-    color: #777;
-    text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
 }
 
 /* Announcement Card Styling */
 /* Announcement Cards */
 .team-member {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
 }
 
 .team-member p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Marquee Container for moving links */
 .marquee-container {
-    width: 100%;
-    height: 74%;
-    overflow: hidden;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+  width: 100%;
+  height: 74%;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .marquee-content {
-    display: flex;
-    flex-direction: column;
-    animation: marquee 15s linear infinite;
+  display: flex;
+  flex-direction: column;
+  animation: marquee 15s linear infinite;
 }
 
 .marquee-item {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .marquee-item a {
-    text-decoration: none;
-    color: #064ea2;
-    font-weight: bold;
-    font-size: 1.1rem;
+  text-decoration: none;
+  color: #064ea2;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .marquee-item a:hover {
-    color: #064ea2;
+  color: #064ea2;
 }
 #announcements .team-member h4 {
-    color: #3f4a9f; 
+  color: #3f4a9f;
 }
 #announcements .team-member h4 {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 /* Marquee animation */
 @keyframes marquee {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    100% {
-        transform: translateY(-100%);
-    }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 /* Grid and Responsiveness */
 .row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-    .service-card {
-        margin-bottom: 30px;
-        width: 100%;
+  .service-card {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
-    }
+  .announcement-card {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
-    .announcement-card {
-        margin-bottom: 30px;
-        width: 100%;
+  .team-member {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
-    }
-
-    .team-member {
-        margin-bottom: 30px;
-        width: 100%;
-
-    }
-
-
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #members .section-title h2 {
+    font-size: 1.1rem;
+  }
+  #members .section-title p {
+    font-size: 0.95rem;
+  }
 }
