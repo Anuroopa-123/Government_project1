@@ -1,0 +1,1 @@
+<textarea name="description" id="editor" class="form-control" rows="6">{!! $content !!}</textarea>

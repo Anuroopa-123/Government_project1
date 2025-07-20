@@ -1,0 +1,81 @@
+/* Union-State Relations Section */
+#services {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3f4a9f;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .img {
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-item .details {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.service-item .icon {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 1;
+}
+
+.service-item .icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.service-item p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.stretched-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+

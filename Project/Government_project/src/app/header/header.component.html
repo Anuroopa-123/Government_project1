@@ -1,0 +1,35 @@
+<header id="header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Left: first image -->
+    <div class="left-logos d-flex align-items-center">
+      <img
+        *ngIf="headerData?.data?.length > 0"
+        [src]="headerData.data[0].slider_image"
+        [alt]="headerData.data[0].slider_title"
+        class="img-fluid"
+      />
+      <img
+        *ngIf="headerData?.data?.length > 2"
+        [src]="headerData.data[2].slider_image"
+        [alt]="headerData.data[2].slider_title"
+        class="img-fluid mx-2"
+      />
+    </div>
+
+    <!-- Center text -->
+    <div class="logo text-center">
+      <span class="d-block txt-red">Union State Web Portal</span>
+      <span class="d-block txt-green">மத்திய மாநில இணைய தளம்</span>
+    </div>
+
+    <!-- Right: second and third images -->
+    <div class="right-logos d-flex align-items-center">
+      <img
+        *ngIf="headerData?.data?.length > 1"
+        [src]="headerData.data[1].slider_image"
+        [alt]="headerData.data[1].slider_title"
+        class="img-fluid mx-2"
+      />
+    </div>
+  </div>
+</header>

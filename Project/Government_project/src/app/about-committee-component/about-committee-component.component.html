@@ -1,0 +1,34 @@
+<!-- Breadcrumb Full Width Bar -->
+<div class="breadcrumbs">
+  <div
+    class="container d-flex justify-content-between align-items-center flex-wrap"
+  >
+    <h2 class="mb-0">About Committee Page</h2>
+    <nav>
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          About Committee Page
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="container mt-4">
+  <h4>About the Committee</h4>
+  <div class="row mt-3">
+    <div class="col-md-6 mb-3" *ngFor="let item of committeeItems">
+      <div class="card p-3">
+        <h5>{{ item.title }}</h5>
+        <p *ngIf="item.description">{{ item.description }}</p>
+        <ul *ngIf="item.points">
+          <li *ngFor="let point of item.points">{{ point }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

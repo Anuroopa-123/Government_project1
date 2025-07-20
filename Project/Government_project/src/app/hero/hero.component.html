@@ -1,0 +1,160 @@
+<section id="hero" class="hero-section">
+  <div class="hero-video">
+    <video
+      #heroVideo
+      [src]="videoUrl"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      style="width: 100%; height: 100%; object-fit: cover"
+    ></video>
+  </div>
+
+  <div class="hero-content">
+    <!-- Your heading / CTA here -->
+  </div>
+</section>
+
+<!-- Rest of your HTML remains unchanged -->
+
+<section id="members" class="members-section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Members</h2>
+    <p>Committee Chairman & Other Committee Members</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center g-4">
+      <div
+        class="col-lg-4 col-md-6"
+        *ngFor="let member of members; let i = index"
+      >
+        <div
+          class="service-card"
+          data-aos="zoom-in"
+          [attr.data-aos-delay]="100 + i * 200"
+        >
+          <div class="card-header">
+            <div class="icon-box">
+              <i class="bi bi-shield-check"></i>
+            </div>
+          </div>
+          <h4>{{ member.name }}</h4>
+          <div class="card-body">
+            <p [innerHTML]="member.description"></p>
+            <div class="feature-image" *ngIf="member.image">
+              <img [src]="member.image" [alt]="member.name" class="img-fluid" />
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-explore">
+              {{ member.role }}
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Announcements Section -->
+<section id="announcements" class="announcements-section">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Left Side: Ex Tamil Nadu Chief Ministers -->
+      <div class="col-xl-6">
+        <!-- Section Title -->
+        <div class="section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Announcements</h2>
+          <p>Made by Ex Tamil Nadu Chief Ministers</p>
+        </div>
+
+        <!-- Ex CM Cards -->
+        <div class="row">
+          <!-- Announcement 1 -->
+          <div
+            class="col-lg-6 col-md-12 d-flex align-items-stretch aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-member">
+              <div class="member-info">
+                <h4 class="pt-4 txt-blue">Thiru. C.N. Annadurai</h4>
+                <span>Former Chief Minister of Tamil Nadu (1967–1969)</span>
+                <p>
+                  We seek more powers for the states, not to weaken the Centre,
+                  but to strengthen true democracy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Announcement 2 -->
+          <div
+            class="col-lg-6 col-md-12 d-flex align-items-stretch aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="team-member">
+              <div class="member-info">
+                <h4 class="pt-4 txt-blue">Thiru. M. Karunanidhi</h4>
+                <span
+                  >Former Chief Minister of Tamil Nadu (Served 5 terms between
+                  1969 and 2011)</span
+                >
+                <p>
+                  Language is not a chain, but a choice that must be respected,
+                  for unity, not uniformity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Important Announcements (Moving Links) -->
+      <div class="col-xl-6">
+        <!-- Section Title -->
+        <div class="section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Important Announcements</h2>
+          <p>Important Links</p>
+        </div>
+
+        <!-- Marquee Content -->
+        <div class="marquee-container">
+          <div class="marquee-content">
+            <div class="marquee-item">
+              <a href="#historic-announcements"
+                >1) Links to Historic Announcements</a
+              >
+            </div>
+            <div class="marquee-item">
+              <a href="https://www.indiacode.nic.in/" target="_blank"
+                >2) Constitution of India – India Code Website</a
+              >
+            </div>
+            <div class="marquee-item">
+              <a href="https://cadindia.clpr.org.in/" target="_blank"
+                >3) Constituent Assembly Debates</a
+              >
+            </div>
+            <div class="marquee-item">
+              <a href="#federal-setup">4) Federal Setup in Other Countries</a>
+            </div>
+            <div class="marquee-item">
+              <a href="#finance-commission-reports"
+                >5) Union Govt. Finance Commission Reports</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Union-State Relations Section -->
+<app-union-state-relations></app-union-state-relations>

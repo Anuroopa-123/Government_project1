@@ -1,0 +1,83 @@
+.form-control,
+.form-select,
+input[type="file"],
+input[type="date"],
+input[type="time"] {
+  background-color: var(--tansam-hover) !important;
+  color: var(--tansam-footer-blue) !important;
+  border-radius: 0.75rem !important;
+  border: 2px solid var(--tansam-footer-blue) !important;
+  font-weight: 500;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #0001;
+  min-height: 2.5rem;
+}
+
+input[type="file"].form-control {
+  border-style: dashed !important;
+}
+
+.form-control:focus,
+.form-control:hover,
+.form-select:focus,
+.form-select:hover,
+input[type="file"]:focus,
+input[type="file"]:hover,
+input[type="date"]:focus,
+input[type="date"]:hover,
+input[type="time"]:focus,
+input[type="time"]:hover {
+  background-color: #fff !important;
+  border-color: var(--tansam-bg) !important;
+  color: var(--tansam-bg) !important;
+  box-shadow: 0 0 0 2px var(--tansam-bg)33;
+}
+
+input::file-selector-button {
+  background: var(--tansam-hover);
+  color: var(--tansam-footer-blue);
+  border: 1px solid var(--tansam-footer-blue);
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+input[type="file"]:focus::file-selector-button,
+input[type="file"]:hover::file-selector-button {
+  background: #fff;
+  color: var(--tansam-bg);
+  border-color: var(--tansam-bg);
+}
+
+label.form-label {
+  color: var(--tansam-bg) !important;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 0.2px;
+}
+
+.form-control::placeholder {
+  color: #3a5e8c99 !important;
+  opacity: 1;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e7ef33;
+  padding-bottom: 0.5rem;
+}
+
+.table thead th {
+  background: var(--tansam-hover) !important;
+  color: var(--tansam-footer-blue) !important;
+  border-bottom: 3px solid var(--tansam-footer-blue) !important;
+  font-weight: 700;
+  padding-top: 1.1rem !important;
+  padding-bottom: 1.1rem !important;
+  font-size: 1.09rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+  box-shadow: 0 2px 8px 0 #0992a908;
+}
