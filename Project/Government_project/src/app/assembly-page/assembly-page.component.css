@@ -1,0 +1,101 @@
+/* Breadcrumb full-width styling */
+.breadcrumbs {
+    padding: 15px 0;
+    background-color: #f1f6fe;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #012970;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+/* Adjust breadcrumb text size */
+.breadcrumb-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/* Other styling remains the same */
+.w-100 {
+    width: 100%;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3f4a9f;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    color: #3f4a9f;
+}
+
+.card p {
+    color: #777;
+}
+
+.card .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+.card .btn i {
+    margin-right: 10px;
+}
+
+.card {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .breadcrumbs h2 {
+        font-size: 18px;
+    }
+}

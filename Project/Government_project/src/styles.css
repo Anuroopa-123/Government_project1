@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 140px;
+    /* Adjust this based on the combined height of your header (140px) and navbar (72px) */
+}
