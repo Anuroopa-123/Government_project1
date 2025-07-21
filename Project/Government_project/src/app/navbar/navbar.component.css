@@ -1,13 +1,21 @@
+/* Navbar Component CSS */
 #navbar {
   background-color: #f8f9fa;
   padding: 10px 0;
   width: 100%;
   z-index: 1000;
+  position: fixed;
+  top: 72px;  /* This depends on the height of your header */
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar links */
 .navbar ul {
   display: flex;
-  justify-content: center; /* Centers the navbar links */
+  justify-content: center;
   align-items: center;
   list-style-type: none;
   width: 100%;
@@ -32,7 +40,7 @@
 /* Mobile View */
 @media screen and (max-width: 768px) {
   #navbar ul {
-    display: none; /* Hide menu by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -45,6 +53,6 @@
   }
 
   #navbar.active ul {
-    display: flex; /* Show menu when active */
+    display: flex;
   }
 }

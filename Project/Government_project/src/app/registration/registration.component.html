@@ -1,0 +1,39 @@
+<!-- Breadcrumb Full Width Bar -->
+<div class="breadcrumbs">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <h2 class="mb-0">About Login Page</h2>
+    <nav>
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          About Login Page
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Login Form -->
+<div class="login-form-container">
+  <div class="container">
+    <form class="login-form">
+      <div class="form-group">
+        <label for="login-method">Choose Login Method</label>
+        <select class="form-control" id="login-method" [(ngModel)]="selectedMethod" name="selectedMethod">
+          <option value="mobile">Mobile Number</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile-number">Enter Mobile Number</label>
+        <input type="text" id="mobile-number" class="form-control" [(ngModel)]="mobileNumber" name="mobileNumber" placeholder="Enter your mobile" />
+      </div>
+
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-primary" (click)="getOTP()">Get OTP</button>
+      </div>
+    </form>
+  </div>
+</div>
