@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf=token" content="{{ csrf_token() }}">
-    <title>TANSAM CMS</title>
+    <title>UNION STATE WEB PORTAL</title>
     <link rel="stylesheet" href="{{ asset('css/colors.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tansam-styles.css') }}">
-    <link rel="icon" href="{{ asset('tansam_logo.png') }}">
+    {{-- <link rel="icon" href="{{ asset('tansam_logo.png') }}"> --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <x-head.tinymce-config/>
 </head>
@@ -17,7 +17,7 @@
             <button class="btn btn-dark rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
                 <i class="bi bi-list" style="font-size: 2rem;"></i>
             </button>
-            <span class="navbar-brand mb-0 h1 text-white">TANSAM CMS</span>
+            <span class="navbar-brand mb-0 h1 text-white">UNION STATE WEB PORTAL</span>
         </div>
     </nav>
     <div class="d-flex min-vh-100">

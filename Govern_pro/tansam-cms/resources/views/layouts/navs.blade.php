@@ -2,8 +2,8 @@
      style="width: 280px; height: 100vh; overflow-y: auto; position: fixed; left: 0; top: 0; z-index: 1040; background-color: var(--tansam-footer-blue); color: rgb(243, 229, 171);"
     >
     <div class="header d-flex justify-center align-tems-center">
-        <img src="{{ asset('tansam_logo.png') }}" alt="Logo" class="w-12 h-12 mr-2">
-        <h3 class="pt-2">TANSAM CMS</h3>
+        {{-- <img src="{{ asset('tansam_logo.png') }}" alt="Logo" class="w-12 h-12 mr-2"> --}}
+        <h3 class="pt-2">UNION STATE WEB PORTAL</h3>
     </div>
     <hr>
     <a class="px-3 py-2 nav-link text-white fw-bold mb-2 d-flex align-tems-center justify-content-between" href="{{ route('users.show') }}">

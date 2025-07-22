@@ -49,7 +49,10 @@ export class HeroComponent implements OnInit, AfterViewChecked {
           image: item.news_image,
           role: item.role,
         }));
+        console.log(this.members);
         this.cdr.detectChanges();
+      } else {
+        console.log('No members found or failed to load members');
       }
     });
   }

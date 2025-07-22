@@ -59,10 +59,10 @@
   margin-bottom: 20px;
 }
 #members .section-title h2 {
-  font-size: 1.3rem; /* clear readable size */
+  font-size: 13px; /* clear readable size */
   font-weight: 700;
   padding: 8px 20px;
-  margin: 0 auto 10px auto; /* centered with margin below */
+  margin: 0 auto; /* centered with margin below */
   background: #e7e9fd; /* light purple background */
   color: #3f4a9f; /* your brand blue */
   display: inline-block;

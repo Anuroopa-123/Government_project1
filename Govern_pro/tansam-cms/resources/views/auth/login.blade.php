@@ -6,8 +6,8 @@
     <meta name="csrf=token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('css/colors.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tansam-form.css') }}">
-    <link rel="icon" href="{{ asset('tansam_logo.png') }}">
-    <title>TANSAM CMS</title>
+    {{-- <link rel="icon" href="{{ asset('tansam_logo.png') }}"> --}}
+    <title>UNION STATE WEB PORTAL</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
