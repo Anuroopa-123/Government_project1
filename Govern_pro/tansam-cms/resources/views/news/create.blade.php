@@ -30,8 +30,8 @@
     <label class="form-label fw-bold">Role *</label>
     <select name="role" required class="form-control">
         <option value="">Select Role</option>
-        <option value="Chairman" {{ old('role') == 'CommitteeChairman' ? 'selected' : '' }}>Committee Chairman</option>
-        <option value="Member" {{ old('role') == 'CommitteeMember' ? 'selected' : '' }}>Committee Member</option>
+        <option value="Chairman" {{ old('role') == 'Chairman' ? 'selected' : '' }}>Committee Chairman</option>
+        <option value="Member" {{ old('role') == 'Member' ? 'selected' : '' }}>Committee Member</option>
     </select>
 </div>
 

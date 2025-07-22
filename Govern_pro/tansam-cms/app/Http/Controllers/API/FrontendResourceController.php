@@ -112,15 +112,16 @@ class FrontendResourceController extends Controller
             'data' => $sliders,
         ]);
     }
-     public function index()
-    {
-        $members = Member::all();
+    public function index()
+{
+    // Directly query for members where the role is not null
+    $members = Member::where('role', '!=', null)->get();
 
-        return response()->json([
-            'status' => 'success',
-            'data' =>Member::where('role', '!=', null)->get()
-        ]);
-    }
+    return response()->json([
+        'status' => 'success',
+        'data' => $members,  // Return the members data directly
+    ]);
+}
 
    
 }
