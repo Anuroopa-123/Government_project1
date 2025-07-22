@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 1000;
   position: fixed;
-  top: 72px;  /* This depends on the height of your header */
+  top: 51px;  /* This depends on the height of your header */
   left: 0;
   right: 0;
   background-color: #fff;
