@@ -1,0 +1,9 @@
+[build]
+  base = ""
+  publish = "dist/project"  # Ensure this matches the outputPath in angular.json
+  command = "npm run build --prod"  # Runs the production build for Angular
+
+[dev]
+  command = "ng serve --open"
+  port = 3000
+  status = 200
