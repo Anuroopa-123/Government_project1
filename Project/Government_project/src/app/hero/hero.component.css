@@ -54,17 +54,19 @@
   padding: 60px 0;
   background-color: #f4f4f4;
 }
+
 #members .section-title {
   text-align: center;
   margin-bottom: 20px;
 }
+
 #members .section-title h2 {
-  font-size: 13px; /* clear readable size */
+  font-size: 13px;
   font-weight: 700;
   padding: 8px 20px;
-  margin: 0 auto; /* centered with margin below */
-  background: #e7e9fd; /* light purple background */
-  color: #3f4a9f; /* your brand blue */
+  margin: 0 auto;
+  background: #e7e9fd;
+  color: #3f4a9f;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -72,12 +74,13 @@
 }
 
 #members .section-title p {
-  font-size: 1rem; /* smaller than h2 */
+  font-size: 1rem;
   font-weight: 500;
-  color: #555; /* subtle dark gray */
-  margin: 0 auto; /* centered */
-  max-width: 80%; /* keeps it neat on wide screens */
+  color: #555;
+  margin: 0 auto;
+  max-width: 80%;
 }
+
 .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
@@ -155,10 +158,13 @@ h4 {
   font-size: 1rem;
   line-height: 1.6;
 }
+
 /* Add more spacing above member name */
 .service-card h4 {
-  margin-top: 60px; /* was 70px, increase for more gap below shield */
+  margin-top: 60px;
+  /* was 70px, increase for more gap below shield */
 }
+
 /* Circular Image */
 .feature-image img {
   width: 150px;
@@ -222,29 +228,38 @@ h4 {
   padding: 60px 0;
   background-color: #f9f9f9;
 }
+
 #announcements .section-title {
-  text-align: center; /* Ensure center alignment for both heading and paragraph */
+  text-align: center;
+  /* Ensure center alignment for both heading and paragraph */
   margin-bottom: 20px;
 }
+
 #announcements .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 8px 20px;
-  margin: 0 auto; /* Center horizontally */
-  background: #e7e9fd; /* Light background pill */
-  color: var(--text-green); /* Theme color */
+  margin: 0 auto;
+  /* Center horizontally */
+  background: #e7e9fd;
+  /* Light background pill */
+  color: var(--text-green);
+  /* Theme color */
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
 }
 
 #announcements .section-title p {
-  margin: 15px auto 0 auto; /* Center below heading */
+  margin: 15px auto 0 auto;
+  /* Center below heading */
   font-weight: 600;
   font-size: 1.2rem;
-  color: #777; /* Adjust for readability */
-  max-width: 500px; /* Optional: prevent overly long lines on large screens */
+  color: #777;
+  /* Adjust for readability */
+  max-width: 500px;
+  /* Optional: prevent overly long lines on large screens */
 }
 
 .section-title h2 {
@@ -327,13 +342,16 @@ h4 {
 .marquee-item a:hover {
   color: #064ea2;
 }
+
 #announcements .team-member h4 {
   color: #3f4a9f;
 }
+
 #announcements .team-member h4 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 /* Marquee animation */
 @keyframes marquee {
   0% {
@@ -371,9 +389,11 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+
   #members .section-title h2 {
     font-size: 1.1rem;
   }
+
   #members .section-title p {
     font-size: 0.95rem;
   }
