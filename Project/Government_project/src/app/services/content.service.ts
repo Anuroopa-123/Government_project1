@@ -16,7 +16,7 @@ export class ContentService {
   getHeroContent(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/workshops`);
   }
-  getMembers(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/news`);
-  }
+  // getMembers(): Observable<any> {
+  //   return this.http.get<any>(`${this.apiUrl}/news`);
+  // }
 }

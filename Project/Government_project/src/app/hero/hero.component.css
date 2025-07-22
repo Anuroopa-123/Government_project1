@@ -49,6 +49,9 @@
   background-color: #0056b3;
 }
 
+
+
+/* Members Section Styling */
 /* Members Section Styling */
 #members {
   padding: 60px 0;
@@ -57,16 +60,16 @@
 
 #members .section-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #members .section-title h2 {
-  font-size: 13px;
+  font-size: 13px; /* clear readable size */
   font-weight: 700;
   padding: 8px 20px;
-  margin: 0 auto;
-  background: #e7e9fd;
-  color: #3f4a9f;
+  margin: 0 auto; /* centered with margin below */
+  background: #e7e9fd; /* light purple background */
+  color: #3f4a9f; /* your brand blue */
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -74,32 +77,11 @@
 }
 
 #members .section-title p {
-  font-size: 1rem;
+  font-size: 1rem; /* smaller than h2 */
   font-weight: 500;
-  color: #555;
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-.section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  color: #333;
-  margin-bottom: 10px;
-  text-align: center;
-  border-radius: 50px;
-  display: block;
-  text-transform: uppercase;
-  color: var(--text-green);
-}
-
-.section-title p {
-  font-size: 1.2rem;
-  color: #777;
-  text-align: center;
+  color: #555; /* subtle dark gray */
+  margin: 0 auto; /* centered */
+  max-width: 80%; /* keeps it neat on wide screens */
 }
 
 /* Service Card Styling */
@@ -109,10 +91,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   padding-top: 50px;
-  height: 102%;
-  width: 103%;
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .service-card:hover {
@@ -123,7 +105,7 @@
 /* Icon Shield */
 .card-header {
   position: absolute;
-  top: 30px;
+  top: 7px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #007bff;
@@ -157,12 +139,6 @@ h4 {
   color: #666;
   font-size: 1rem;
   line-height: 1.6;
-}
-
-/* Add more spacing above member name */
-.service-card h4 {
-  margin-top: 60px;
-  /* was 70px, increase for more gap below shield */
 }
 
 /* Circular Image */
@@ -201,28 +177,21 @@ h4 {
   margin-left: 8px;
 }
 
-/* Hover Effect: Line Above the Card */
-.service-card:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.4s ease;
-}
-
-.service-card:hover::before {
-  width: 100%;
-}
-
-/* Grid and Responsiveness */
+/* Ensure the cards are in the same row */
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Ensures the cards are spaced out evenly */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+.col-lg-4,
+.col-md-6 {
+  flex: 1 1 30%; /* Ensures that the cards take up 30% of the row and wrap as necessary */
+  margin: 10px; /* Add space between the cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Announcements Section Styling */
 #announcements {
   padding: 60px 0;
@@ -388,6 +357,11 @@ h4 {
   .container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .announcement-card {
+    margin-bottom: 30px;
+    width: 100%;
   }
 
   #members .section-title h2 {

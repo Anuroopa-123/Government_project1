@@ -33,6 +33,7 @@ export class HeroComponent implements OnInit, AfterViewChecked {
   ) {}
 
   ngOnInit() {
+   
     // Load hero video content
     this.contentService.getHeroContent().subscribe((response) => {
       if (response.status === 'success' && response.data.length > 0) {
@@ -41,22 +42,22 @@ export class HeroComponent implements OnInit, AfterViewChecked {
       }
     });
 
-    this.contentService.getMembers().subscribe((response) => {
-      console.log('Members response:', response);
-      if (response.status === 'success' && response.data.length > 0) {
-        this.members = response.data.map((item: any) => ({
-          name: item.title,
-          description: item.description,
-          image: item.news_image,
-          date: item.date,
-          role: item.role,
-        }));
-         console.log('Mapped members:', this.members); 
-        this.cdr.detectChanges();
-      } else {
-        console.log('No members found or failed to load members');
-      }
-    });
+    // this.contentService.getMembers().subscribe((response) => {
+    //   console.log('Members response:', response);
+    //   if (response.status === 'success' && response.data.length > 0) {
+    //     this.members = response.data.map((item: any) => ({
+    //       name: item.title,
+    //       description: item.description,
+    //       image: item.news_image,
+    //       date: item.date,
+    //       role: item.role,
+    //     }));
+    //      console.log('Mapped members:', this.members);
+    //     this.cdr.detectChanges();
+    //   } else {
+    //     console.log('No members found or failed to load members');
+    //   }
+    // });
   }
 
   ngAfterViewChecked() {
