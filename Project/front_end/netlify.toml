@@ -1,0 +1,9 @@
+[build]
+  base = ""
+  publish = "dist/project"
+  command = "npm run build"  
+
+[dev]
+  command = "ng serve --open"
+  port = 3000
+  status = 200
