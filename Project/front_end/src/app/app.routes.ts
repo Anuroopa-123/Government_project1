@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { AssemblyPageComponent } from './assembly-page/assembly-page.component';
 import { PressreleaseComponent } from './pressrelease/pressrelease.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { CommitteePhotosComponent } from './committee-photos/committee-photos.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,4 +20,5 @@ export const routes: Routes = [
   { path: 'assembly', component: AssemblyPageComponent },
   { path: 'press-release', component: PressreleaseComponent },
   { path: 'login', component: RegistrationComponent },
+  { path: 'gallery', component: CommitteePhotosComponent },
 ];

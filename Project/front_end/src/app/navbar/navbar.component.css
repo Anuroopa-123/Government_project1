@@ -20,7 +20,7 @@
   list-style-type: none;
   width: 100%;
   margin: 0;
-  padding: 15px;
+  padding: 10px;
 }
 
 .navbar ul li a {
@@ -29,25 +29,34 @@
   font-size: 16px;
   font-weight: bold;
   padding: 10px 15px;
+  position: relative; /* To position the underline */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+/* Hover Effect: Change text color and add animated underline */
 .navbar ul li a:hover,
-.navbar ul li a.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.navbar ul li a:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-/* Active state for the currently active route */
 .navbar ul li.active a {
-  background-color: #007bff;
-  color: #fff;
-
+  color: #d19462; /* Change text color to blue */
 }
+
+/* Animated Underline */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #41576e; /* Blue underline */
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li.active a::after {
+  width: 100%;
+  left: 0;
+}
+
 
 /* Mobile View */
 @media screen and (max-width: 768px) {
