@@ -1,0 +1,73 @@
+<section class="w-100 pos-relative">
+  <div class="container">
+    <div class="row">
+      <!-- Left Vertical Tabs -->
+      <div class="col-md-3 sidebar">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+          <button *ngFor="let chapter of chapters; let i = index"
+                  class="nav-link sub-tab"
+                  [ngClass]="{'active': selectedChapter === i}"
+                  (click)="selectChapter(i)">
+            <i class="bi bi-book me-1"></i> Chapter {{ i + 1 }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Content Panels -->
+      <div class="col-md-9 content-area">
+        <div *ngFor="let chapter of chapters; let i = index" 
+             id="content-{{i+1}}" class="content-panel" 
+             [ngClass]="{'active': selectedChapter === i}">
+          <h4>Chapter {{ i + 1 }}</h4>
+          <p>{{ chapter.content }}</p>
+
+          <!-- Download, Upload, and Feedback Buttons -->
+          <div class="d-flex flex-column flex-md-row justify-content-start gap-3">
+            <!-- Download Button -->
+            <button class="btn action-btn btn-outline-download">
+              <i class="bi bi-download"></i> Download
+            </button>
+
+            <!-- Upload Button -->
+            <div class="upload-group mb-1 d-flex">
+              <button type="button" class="btn btn-outline-upload btn-upload">
+                <i class="bi bi-upload"></i> Upload
+              </button>
+              <input type="file" class="form-control d-none file-input">
+              <div class="mt-2 uploaded-file-name text-muted small ms-2"></div>
+
+              <button type="button" class="ms-2 btn btn-primary mt-2 d-none submit-upload-btn">
+                <i class="bi bi-check-circle"></i> Submit File
+              </button>
+            </div>
+          </div>
+
+          <!-- Global Feedback Button -->
+          <div class="text-end mb-4">
+            <button (click)="toggleFeedback(i)" class="btn btn-outline-dark">
+              <i class="bi bi-chat-text"></i> Give All Feedback
+            </button>
+          </div>
+
+          <!-- Feedback Form -->
+          <div *ngIf="feedbackVisible[i]" class="card p-3 mb-4">
+            <label class="form-label">Give Feedback</label>
+            <textarea class="form-control mb-2" rows="3" placeholder="Write your feedback..."></textarea>
+            <input type="file" class="form-control mb-2">
+            <button class="btn btn-primary">Submit Feedback</button>
+          </div>
+
+          <!-- Numbered List -->
+          <ol class="custom-list" id="feedbackList">
+            <li *ngFor="let feedback of chapter.feedback">
+              {{ feedback.text }}
+              <div class="text-end mt-2">
+                <button (click)="toggleFeedback(i)" class="btn btn-outline-primary give-feedback-btn">Give Feedback</button>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

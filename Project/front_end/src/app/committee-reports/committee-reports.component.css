@@ -1,0 +1,213 @@
+/* General Layout */
+section {
+  margin-top: 20px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+
+/* Vertical Tabs */
+.nav-pills .nav-link {
+  text-align: left;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-pills .nav-link i {
+  margin-right: 10px;
+}
+
+/* Content Area */
+.content-area {
+  padding: 20px;
+}
+
+.content-panel {
+  display: none;
+}
+
+.content-panel.active {
+  display: block;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-outline-download,
+.btn-outline-upload,
+.btn-outline-dark {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.upload-group .form-control {
+  width: auto;
+  display: inline-block;
+}
+
+.upload-group .uploaded-file-name {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feedback-section {
+  margin-top: 20px;
+}
+
+.feedback-section .form-control {
+  margin-bottom: 10px;
+}
+
+.custom-list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.custom-list li {
+  margin-bottom: 15px;
+}
+
+.custom-list .give-feedback-btn {
+  margin-top: 10px;
+}
+
+.custom-list .feedback-section {
+  display: none;
+}
+
+.custom-list .feedback-section.active {
+  display: block;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+
+/* Feedback Form Styling */
+.card {
+  display: none;
+}
+
+.card.active {
+  display: block;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .nav-pills .nav-link i {
+    margin-right: 5px;
+  }
+
+  .btn-outline-download,
+  .btn-outline-upload,
+  .btn-outline-dark {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .feedback-section {
+    margin-top: 20px;
+  }
+
+  .custom-list {
+    padding-left: 15px;
+  }
+
+  /* Remove extra padding on content panels */
+  .content-panel {
+    padding: 0 10px;
+  }
+}
+
+/* Media Queries for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .nav-pills .nav-link {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .btn-outline-download,
+  .btn-outline-upload,
+  .btn-outline-dark {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .upload-group .form-control {
+    width: auto;
+  }
+
+  .feedback-section .form-control {
+    font-size: 0.9rem;
+  }
+
+  .feedback-section button {
+    font-size: 0.9rem;
+  }
+
+  .content-panel {
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content-area {
+    padding: 0 10px;
+  }
+
+  .custom-list li {
+    margin-bottom: 12px;
+  }
+
+  .text-end {
+    text-align: center;
+  }
+}

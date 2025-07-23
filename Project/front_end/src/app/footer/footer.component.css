@@ -1,11 +1,18 @@
+/* Footer Component Styling */
 #footer {
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  position: relative;
+  margin-top: auto;
+  width: 100%;
 }
 
+/* Footer content */
 #footer .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 #footer h4 {
@@ -57,7 +64,6 @@
   color: white;
   padding: 20px 0;
   text-align: center;
-  /* Remove position relative */
   margin-top: auto;
 }
 
@@ -87,4 +93,15 @@
   #footer .col-md-4 {
     margin-bottom: 30px;
   }
+}
+
+/* Ensure the body or main content area doesn't overlap with the footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.content-area {
+  flex: 1; /* Ensures content takes up remaining space */
 }
