@@ -1,39 +1,31 @@
 <nav id="navbar" class="navbar">
   <ul>
-    <li>
-      <a class="nav-link" href="/" routerLinkActive="active"
-        ><i class="bi bi-house-door pe-1"></i> Home</a
-      >
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <a class="nav-link" routerLink="/">
+        <i class="bi bi-house-door pe-1"></i> Home
+      </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/committee']" routerLinkActive="router-link-active"  routerLinkActive="active"
-        ><i class="bi bi-house-door pe-1"></i> About Committee</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/committee']">
+        <i class="bi bi-house-door pe-1"></i> About Committee
+      </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/assembly']" routerLinkActive="active"
-        >Assembly</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/assembly']"> Assembly </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/gallery']" routerLinkActive="active"
-        >Committee Photos</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/gallery']"> Committee Photos </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/report']" routerLinkActive="active"
-        >Committee Reports</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/report']"> Committee Reports </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/press-release']" routerLinkActive="active"
-        >Press Release</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/press-release']"> Press Release </a>
     </li>
-    <li>
-      <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active"
-        ><i class="pe-1 bi bi-pencil-square"></i> Response Registration</a
-      >
+    <li routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/login']">
+        <i class="pe-1 bi bi-pencil-square"></i> Response Registration
+      </a>
     </li>
   </ul>
 </nav>

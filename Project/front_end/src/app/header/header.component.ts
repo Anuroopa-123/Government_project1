@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   loadHeaderContent() {
     this.contentService.getHeaderContent().subscribe((data) => {
       this.headerData = data;
-      console.log(this.headerData);
+      // console.log(this.headerData);
     });
   }
 
