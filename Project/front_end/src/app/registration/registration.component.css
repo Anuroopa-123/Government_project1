@@ -26,23 +26,34 @@
     color: #6c757d;
 }
 
-/* Login Form */
-.login-form-container {
-    margin-top: 50px;
+/* Main container to keep the form centered and the footer at the bottom */
+.page-container {
     display: flex;
-    justify-content: center; /* Centers the form horizontally */
-    align-items: flex-start; /* Aligns it to the top */
-    padding-bottom: 50px; /* Adds some space before the footer */
+    flex-direction: column;
+    justify-content: space-between; /* Make sure the content (form) is centered, and footer at the bottom */
+    height: 100vh; /* Full screen height */
 }
 
+/* Login Form Container */
+.login-form-container {
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+    flex-grow: 1; /* Ensures the form takes all available space */
+}
+
+/* Login Form Styling */
 .login-form {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    width: 400px; /* Makes the form have a fixed width */
+    width: 400px; /* Fixed width for the form */
+    max-width: 90%; /* Makes sure it doesn’t exceed 90% of the viewport width */
+    margin: auto; /* Ensures the form stays centered */
 }
 
+/* Form Group */
 .form-group {
     margin-bottom: 20px;
 }
@@ -108,4 +119,46 @@ button:hover {
 
 .social-icons a:hover {
     color: #0056b3;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    /* Adjusting the form width for smaller screens */
+    .login-form {
+        width: 90%; /* Take up 90% of the screen width */
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    /* Adjust form inputs and buttons for smaller devices */
+    input,
+    select {
+        font-size: 0.9rem; /* Smaller font size for input fields */
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 8px 16px; /* Reduced button padding */
+    }
+}
+
+/* Media Query for very small mobile devices */
+@media (max-width: 480px) {
+    /* Further reduce form padding and width */
+    .login-form {
+        width: 95%; /* Take up 95% of the screen width */
+        padding: 15px; /* Minimal padding */
+    }
+
+    /* Adjust form inputs and buttons for very small devices */
+    input,
+    select {
+        font-size: 0.85rem; /* Even smaller font size */
+        padding: 6px; /* Less padding */
+    }
+
+    button {
+        font-size: 1rem; /* Keep the button font size moderate */
+        padding: 7px 14px; /* Reduced padding */
+    }
 }
