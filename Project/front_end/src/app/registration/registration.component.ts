@@ -16,6 +16,7 @@ export class RegistrationComponent {
     if (this.mobileNumber) {
       console.log('Sending OTP to mobile number:', this.mobileNumber);
       alert(`OTP has been sent to ${this.mobileNumber}`);
+      this.mobileNumber = '';
     } else {
       alert('Please enter a valid mobile number.');
     }
