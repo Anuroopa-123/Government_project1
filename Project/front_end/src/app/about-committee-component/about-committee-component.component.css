@@ -1,62 +1,91 @@
-/* Breadcrumb full-width styling */
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #f1f6fe;
-  width: 100%;
+/* Basic layout for the About Us section */
+.about-us1 {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  gap: 20px; /* Add some space between sidebar and content */
+  flex-wrap: wrap; /* Allows content to wrap in smaller screens */
 }
 
-.breadcrumbs h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #012970;
-}
-
-.breadcrumb {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.breadcrumb-item a {
-  text-decoration: none;
-  color: #0d6efd;
-}
-
-.breadcrumb-item.active {
-  color: #6c757d;
-}
-
-/* Page container styling */
-:host {
-  display: block;
-  background-color: #f8f9fa;
-  min-height: 100vh;
-  padding-bottom: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container {
-  background-color: #ffffff;
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #f0f0f0;
   padding: 20px;
-  border-radius: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left center;
+  z-index: 10;
 }
 
-/* Heading styles */
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0d6efd;
-  border-left: 4px solid #0d6efd;
-  padding-left: 10px;
-  margin-top: 10px;
+.sidebar h2 {
+  color: #064ea2;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Sidebar Navigation Items */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  padding: 15px 15px;
+  color: #064ea2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: white;
+  color: #064ea2;
+}
+
+.sidebar ul li.active {
+  background-color: #064ea2;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+/* Content Area - Flexbox for dynamic resizing */
+.content-area {
+  flex-grow: 1; /* Allow content area to take up remaining space */
+  padding: 30px;
+  background-color: #ecf0f1;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+/* Styling for the content */
+.content-area .content {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: auto; /* Content should adjust based on the text length */
+  max-width: 100%;
+}
+
+/* Title Section */
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
 }
 
-h5 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0d6efd;
-  margin-bottom: 10px;
+/* Paragraph styling */
+.content-area .content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 /* Card styling */
@@ -85,8 +114,36 @@ h5 {
   padding-left: 20px;
 }
 
+/* Home Icon */
+.home-icon {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  font-size: 24px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.home-icon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-icon i {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.home-icon i:hover {
+  color: #0056b3;
+}
+
 /* Responsive adjustments */
 @media (max-width: 767px) {
+  .about-us1 {
+    flex-direction: column; /* Stack the sidebar and content vertically */
+  }
+
   .breadcrumbs .d-flex {
     flex-direction: column;
     align-items: flex-start;
@@ -94,6 +151,15 @@ h5 {
 
   .breadcrumbs h2 {
     margin-bottom: 10px;
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes up full width in smaller screens */
+    padding: 10px;
+  }
+
+  .content-area {
+    padding-left: 0; /* Remove any left padding */
   }
 
   h4 {

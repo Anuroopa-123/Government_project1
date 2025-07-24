@@ -1,16 +1,14 @@
 {
   "name": "project",
   "version": "0.0.0",
-"scripts": {
-  "ng": "ng",
-  "start": "ng serve",
-  "build": "ng build --configuration production",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "serve": "ng serve"
-}
-
-,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --configuration production",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve": "ng serve"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
@@ -21,6 +19,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "aos": "^2.3.4",
     "rxjs": "~7.8.0",
     "swiper": "^11.2.10",
     "tslib": "^2.3.0",

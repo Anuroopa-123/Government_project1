@@ -57,7 +57,7 @@ class WorkshopController extends Controller
 
     // Create workshop record
     $workshop = Workshop::create([
-        'image' => null, 
+        'image' => null,
         'video' => $videoPath,
         'is_published' => $request->has('is_published') ? 1 : 0
     ]);

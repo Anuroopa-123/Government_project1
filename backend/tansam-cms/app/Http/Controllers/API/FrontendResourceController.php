@@ -122,6 +122,24 @@ class FrontendResourceController extends Controller
         'data' => $members,  // Return the members data directly
     ]);
 }
+public function heroContent()
+{
+    $latestWorkshop = Workshop::where('is_published', true)
+                                ->latest()
+                                ->first(['id', 'video', 'created_at']);
 
-   
+    if ($latestWorkshop) {
+        $latestWorkshop->video_url = $latestWorkshop->video
+            ? URL::to($latestWorkshop->video)
+            : null;
+    }
+
+    return response()->json([
+        'status' => 'success',
+        'data' => $latestWorkshop,
+    ]);
+}
+
+
+
 }
