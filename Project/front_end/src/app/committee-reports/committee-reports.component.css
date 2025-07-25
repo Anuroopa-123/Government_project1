@@ -119,6 +119,8 @@ p {
   display: block;
 }
 
+
+
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
   .row {

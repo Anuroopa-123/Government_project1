@@ -23,25 +23,25 @@
       <div class="font-bold text-xl mb-2 text-center">Categories</div>
       <hr>
       <p class="text-gray-700 text-lg d-flex justify-between">
-        Entrepreneurships 
+        Assembly Section 
         <a href="{{ route('entrepreneurship.create') }}" class="btn btn-sm btn-success">
           <i class="bi bi-plus-circle pr-1"></i>Add
         </a>
       </p>
       <p class="text-gray-700 text-lg d-flex justify-between">
-        Events 
+        Questionnaire 
         <a href="{{ route('events.create') }}" class="btn btn-sm btn-success">
           <i class="bi bi-plus-circle pr-1"></i>Add
         </a>
       </p>
       <p class="text-gray-700 text-lg d-flex justify-between">
-        Hackathons
+        Committee Photos
         <a href="{{ route('hackathons.create') }}" class="btn btn-sm btn-success">
           <i class="bi bi-plus-circle pr-1"></i>Add
         </a>
       </p>
       <p class="text-gray-700 text-lg d-flex justify-between">
-        Jobs 
+        Committee Reports 
         <a href="{{ route('jobs.create') }}" class="btn btn-sm btn-success">
           <i class="bi bi-plus-circle pr-1"></i>Add
         </a>
@@ -59,7 +59,7 @@
         </a>
       </p>
       <p class="text-gray-700 text-lg d-flex justify-between">
-        News
+       Member section
         <a href="{{ route('news.create') }}" class="btn btn-sm btn-success">
           <i class="bi bi-plus-circle pr-1"></i>Add
         </a>
