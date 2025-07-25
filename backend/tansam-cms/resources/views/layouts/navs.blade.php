@@ -31,27 +31,27 @@
                     </li>
                     <li>
                         <a href="{{ route('entrepreneurship.list') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-lightbulb-fill me-2"></i> Entrepreneurship
+                            <i class="bi bi-lightbulb-fill me-2"></i>  Assembly Section 
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('events.list') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-calendar-event-fill me-2"></i> Events
+                            <i class="bi bi-calendar-event-fill me-2"></i>   Questionnaire 
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('hackathons.list') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-trophy-fill me-2"></i> Hackathon Events
+                            <i class="bi bi-trophy-fill me-2"></i> Press Release
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('jobs.list') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-briefcase-fill me-2"></i> Jobs
+                            <i class="bi bi-briefcase-fill me-2"></i> Committee Photos
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('jobApps.show') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-file-pdf-fill me-2"></i> Job Applications
+                            <i class="bi bi-file-pdf-fill me-2"></i>    Committee Reports 
                         </a>
                     </li>
                     <li>
@@ -66,7 +66,7 @@
                     </li>
                     <li>
                         <a href="{{ route('news.list') }}" class="nav-link text-white py-2">
-                            <i class="bi bi-newspaper me-2"></i> News
+                            <i class="bi bi-newspaper me-2"></i> Member Section
                         </a>
                     </li>
                     <li>
@@ -84,7 +84,7 @@
         </li>
         <li class="nav-item mt-1">
             <a href="{{ route('courseRegs.show') }}" class="nav-link text-white py-2 px-3 fw-bold d-flex align-items-center">
-                <i class="bi bi-journal-check me-2"></i> Course Registration
+                <i class="bi bi-journal-check me-2"></i> Committee Section
             </a>
         </li>
     </ul>
